@@ -14,6 +14,7 @@ def createDataSet():
 def classify(input, dataset, label, k):
  	datasize = dataset.shape[0]
  	## eclucian
+ 	print tile(input, (datasize, 1))
  	diff =  tile(input, (datasize,1)) - dataset
  	sqdiff = diff ** 2
  	squareDist = sum(sqdiff, axis=1) #hang xiangliang
